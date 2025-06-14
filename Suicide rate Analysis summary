@@ -1,0 +1,29 @@
+Project Summary – Suicide Death Rates in the United States (1950‑2018)
+
+Using the CDC’s historical file of age‑adjusted and crude suicide death rates (per 100 000 population), we performed a full Python‑based data‑analysis workflow:
+
+Setup & Data Load – Imported pandas, numpy, and matplotlib, then read the CSV.
+
+Inspection & Cleaning –
+
+6 390 raw rows × 13 columns narrowed to 5 484 analytic rows after dropping records with missing ESTIMATE values.
+
+Added quick‑parse columns for Sex (Male / Female / All) and Race (White, Black, American Indian/Alaska Native, Asian/Pacific Islander, Hispanic/Latino, All races).
+
+#Exploratory Visuals –
+
+Overall trend: the national age‑adjusted rate fell modestly after 1950 but has climbed steadily since the late 1990s, reaching 14.2 deaths per 100 000 in 2018, ~8 % higher than the 2009‑2018 average.
+
+Sex gap: across the full period male rates run 3‑to‑4 times female rates; in the most recent decade males average 16.8, females 4.9 per 100 000.
+
+Race/Hispanic origin (2009‑2018 average): highest rates among White (15.8) and American Indian/Alaska Native (15.7) populations; markedly lower among Black (6.2) and Asian (6.5) groups.
+
+Age profile (2018 crude): risk rises sharply through mid‑life: 45‑64 year‑olds top 20 deaths per 100 000, while the oldest cohort (85 +) remains elevated (~19). Pre‑teen children display the lowest rates (<3).
+
+#Key Take‑aways
+
+The modern‑era uptick is driven disproportionately by middle‑aged and older men.
+
+Racial/ethnic disparities persist, with White and American Indian/Alaska Native communities bearing the greatest burden.
+
+Prevention efforts can be sharpened by targeting high‑risk age‑sex‑race intersections—particularly middle‑aged White or AI/AN males—and by monitoring the recent upward trajectory.
